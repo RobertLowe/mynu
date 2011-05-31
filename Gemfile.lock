@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    mynu (0.1.0)
+      bundler (~> 1.0.0)
+      rake
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    rake (0.9.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mynu!
