@@ -3,9 +3,16 @@ Mynu
 
 A simple DSL to create a systembar menu with macruby in OSX
 
+![](http://i.imgur.com/yQBEE.png)
 
 1. `gem install mynu`
 2. `macruby examples/hello-mynu.rb`
+
+
+An example of abusing `open [-a]`
+
+`macruby examples/workflow.rb`
+
 
 Or if your feeling bohemian:
 
@@ -55,6 +62,70 @@ Or if your feeling bohemian:
       mynu.item "Simple Item" do
         puts "Hello World!"
       end
+
+      mynu.run
+
+====
+
+      require 'rubygems'
+      require 'mynu'
+
+      mynu = Mynu.new
+
+      mynu.item "Applications" do |applications|
+        applications.item "Terminal" do
+          # TODO: AppleScript a tab, this does nothing if terminal is open
+          `open -a /Applications/Utilities/Terminal.app`
+        end
+      end
+
+      mynu.item "Project" do |project|
+        project.item "Live" do
+          `open http://example.com`
+        end
+        project.item "Staging" do
+          `open http://user:pass@staging.example.com`
+        end
+        project.item "Development" do
+          `open http://example.dev`
+        end
+        project.item "Repos" do |repos|
+          repos.item "Example" do
+            `open ~/example`
+          end
+          repos.item "Resources" do
+            `open ~/example-resources`
+          end
+        end
+      end
+
+      mynu.items << NSMenuItem.separatorItem
+
+      mynu.item "Development" do |development|
+        development.item "Rails" do |development_mynu|
+          development_mynu.item "Github" do
+            `open http://github.com/rails/rails`
+          end
+          development_mynu.item "Repo" do
+            `open ~/workspace/rails`
+          end
+        end
+      end
+
+      mynu.items << NSMenuItem.separatorItem
+
+      mynu.item "Downloads" do
+        `open ~/Downloads`
+      end
+
+      mynu.items << NSMenuItem.separatorItem
+
+      desktop = mynu.item "Desktop" do
+        `open ~/Desktop`
+      end
+
+      mynu.items << NSMenuItem.separatorItem
+
 
       mynu.run
 
