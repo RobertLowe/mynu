@@ -32,15 +32,17 @@ Usage example:
           menu.item "Option 2b" do
             puts "Option 2b clicked!"
           end
-          menu.execute do
-            puts "Menu item clicked!"
+          menu.execute do |menu|
+            puts "Menu clicked!"
             menu.title = "Dynamically changed!"
           end
         end
         capture_menu_item = menu.item "Disabled" do |item|
           item.disabled
         end
+        capture_menu_item.disabled
         menu.item "Enable `Disabled`" do |item|
+          capture_menu_item.enabled
           item.execute do
             capture_menu_item.enabled
             capture_menu_item.execute do
