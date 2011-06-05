@@ -1,0 +1,484 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='0.9'>
+<enum name='SystemEventsAppeBlue' value='1651275109'/>
+<enum name='SystemEventsAppeGraphite' value='1735550580'/>
+<enum name='SystemEventsDhacAskWhatToDo' value='1684562291'/>
+<enum name='SystemEventsDhacIgnore' value='1684564327'/>
+<enum name='SystemEventsDhacOpenApplication' value='1684562288'/>
+<enum name='SystemEventsDhacRunAScript' value='1684566643'/>
+<enum name='SystemEventsDpefGenie' value='1734700649'/>
+<enum name='SystemEventsDpefScale' value='1935892844'/>
+<enum name='SystemEventsDplsBottom' value='1651471476'/>
+<enum name='SystemEventsDplsLeft' value='1818584692'/>
+<enum name='SystemEventsDplsRight' value='1919510376'/>
+<enum name='SystemEventsEMdsCommandDown' value='1264807268'/>
+<enum name='SystemEventsEMdsControlDown' value='1264809068'/>
+<enum name='SystemEventsEMdsOptionDown' value='1265594484'/>
+<enum name='SystemEventsEMdsShiftDown' value='1265854068'/>
+<enum name='SystemEventsEMkyCommand' value='1698917732'/>
+<enum name='SystemEventsEMkyControl' value='1698918004'/>
+<enum name='SystemEventsEMkyOption' value='1699704948'/>
+<enum name='SystemEventsEMkyShift' value='1699964532'/>
+<enum name='SystemEventsEdfmApplePhotoFormat' value='1684435048'/>
+<enum name='SystemEventsEdfmAppleShareFormat' value='1684431219'/>
+<enum name='SystemEventsEdfmAudioFormat' value='1684431221'/>
+<enum name='SystemEventsEdfmHighSierraFormat' value='1684433011'/>
+<enum name='SystemEventsEdfmISO9660Format' value='1684420918'/>
+<enum name='SystemEventsEdfmMSDOSFormat' value='1684434291'/>
+<enum name='SystemEventsEdfmMacOSExtendedFormat' value='1684432939'/>
+<enum name='SystemEventsEdfmMacOSFormat' value='1684432998'/>
+<enum name='SystemEventsEdfmNFSFormat' value='1684434534'/>
+<enum name='SystemEventsEdfmProDOSFormat' value='1684435058'/>
+<enum name='SystemEventsEdfmQuickTakeFormat' value='1684435316'/>
+<enum name='SystemEventsEdfmUDFFormat' value='1684436324'/>
+<enum name='SystemEventsEdfmUFSFormat' value='1684436326'/>
+<enum name='SystemEventsEdfmUnknownFormat' value='1684415524'/>
+<enum name='SystemEventsEdfmWebDAVFormat' value='1684436836'/>
+<enum name='SystemEventsEnumDetailed' value='1819763828'/>
+<enum name='SystemEventsEnumStandard' value='1819767668'/>
+<enum name='SystemEventsEpacAllWindows' value='1634495607'/>
+<enum name='SystemEventsEpacApplicationWindows' value='1634758775'/>
+<enum name='SystemEventsEpacDashboard' value='1684108136'/>
+<enum name='SystemEventsEpacDisableScreenSaver' value='1684632419'/>
+<enum name='SystemEventsEpacNone' value='1852796517'/>
+<enum name='SystemEventsEpacShowDesktop' value='1684370283'/>
+<enum name='SystemEventsEpacShowSpaces' value='1936745331'/>
+<enum name='SystemEventsEpacSleepDisplay' value='1684632435'/>
+<enum name='SystemEventsEpacStartScreenSaver' value='1937006962'/>
+<enum name='SystemEventsEpfkF1' value='1177643897'/>
+<enum name='SystemEventsEpfkF10' value='1177628779'/>
+<enum name='SystemEventsEpfkF11' value='1177629035'/>
+<enum name='SystemEventsEpfkF12' value='1177629291'/>
+<enum name='SystemEventsEpfkF13' value='1177629547'/>
+<enum name='SystemEventsEpfkF14' value='1177629803'/>
+<enum name='SystemEventsEpfkF15' value='1177630059'/>
+<enum name='SystemEventsEpfkF16' value='1177630315'/>
+<enum name='SystemEventsEpfkF17' value='1177630571'/>
+<enum name='SystemEventsEpfkF18' value='1177630827'/>
+<enum name='SystemEventsEpfkF19' value='1177631083'/>
+<enum name='SystemEventsEpfkF2' value='1177709433'/>
+<enum name='SystemEventsEpfkF3' value='1177774969'/>
+<enum name='SystemEventsEpfkF4' value='1177840505'/>
+<enum name='SystemEventsEpfkF5' value='1177906041'/>
+<enum name='SystemEventsEpfkF6' value='1177971577'/>
+<enum name='SystemEventsEpfkF7' value='1178037113'/>
+<enum name='SystemEventsEpfkF8' value='1178102649'/>
+<enum name='SystemEventsEpfkF9' value='1178168185'/>
+<enum name='SystemEventsEpfkLeftCommand' value='1281584484'/>
+<enum name='SystemEventsEpfkLeftControl' value='1281586284'/>
+<enum name='SystemEventsEpfkLeftOption' value='1282371700'/>
+<enum name='SystemEventsEpfkLeftShift' value='1282631796'/>
+<enum name='SystemEventsEpfkNone' value='1852796517'/>
+<enum name='SystemEventsEpfkRightCommand' value='1382247780'/>
+<enum name='SystemEventsEpfkRightControl' value='1382249580'/>
+<enum name='SystemEventsEpfkRightOption' value='1383034996'/>
+<enum name='SystemEventsEpfkRightShift' value='1383295092'/>
+<enum name='SystemEventsEpfkSecondaryFunctionKey' value='1397123961'/>
+<enum name='SystemEventsEpmdCommand' value='1668113517'/>
+<enum name='SystemEventsEpmdControl' value='1668574317'/>
+<enum name='SystemEventsEpmdNone' value='1852796517'/>
+<enum name='SystemEventsEpmdOption' value='1869640813'/>
+<enum name='SystemEventsEpmdShift' value='1936225389'/>
+<enum name='SystemEventsFtssAutomatic' value='1635087469'/>
+<enum name='SystemEventsFtssLight' value='1818850405'/>
+<enum name='SystemEventsFtssMedium' value='1835361385'/>
+<enum name='SystemEventsFtssStandard' value='1937010276'/>
+<enum name='SystemEventsFtssStrong' value='1937011303'/>
+<enum name='SystemEventsHicoBlue' value='1651275109'/>
+<enum name='SystemEventsHicoGold' value='1735355492'/>
+<enum name='SystemEventsHicoGraphite' value='1735550580'/>
+<enum name='SystemEventsHicoGreen' value='1735550318'/>
+<enum name='SystemEventsHicoOrange' value='1869770343'/>
+<enum name='SystemEventsHicoPurple' value='1886548076'/>
+<enum name='SystemEventsHicoRed' value='1919247392'/>
+<enum name='SystemEventsHicoSilver' value='1936488050'/>
+<enum name='SystemEventsMvszCurrent' value='1668641652'/>
+<enum name='SystemEventsMvszDouble' value='1685026146'/>
+<enum name='SystemEventsMvszHalf' value='1751215206'/>
+<enum name='SystemEventsMvszNormal' value='1852797549'/>
+<enum name='SystemEventsMvszScreen' value='1718187123'/>
+<enum name='SystemEventsPrmdNormal' value='1852797549'/>
+<enum name='SystemEventsPrmdSlideShow' value='1886221171'/>
+<enum name='SystemEventsSavoAsk' value='1634954016'/>
+<enum name='SystemEventsSavoNo' value='1852776480'/>
+<enum name='SystemEventsSavoYes' value='2036691744'/>
+<enum name='SystemEventsSclbJumpToHere' value='1953458290'/>
+<enum name='SystemEventsSclbJumpToNextPage' value='1853386855'/>
+<enum name='SystemEventsSclpTogether' value='1952937064'/>
+<enum name='SystemEventsSclpTogetherAtTopAndBottom' value='1952937058'/>
+<enum name='SystemEventsSclpTopAndBottom' value='1953522292'/>
+<class name='SystemEventsAlias'>
+<method selector='printPrintDialog:withProperties:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setStationery:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='stationery'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsAppearancePreferencesObject'>
+<method selector='doubleClickMinimizes'>
+<retval type='B'/>
+</method>
+<method selector='fontSmoothing'>
+<retval type='B'/>
+</method>
+<method selector='setDoubleClickMinimizes:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setFontSmoothing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSmoothScrolling:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='smoothScrolling'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsApplication'>
+<method selector='UIElementsEnabled'>
+<retval type='B'/>
+</method>
+<method selector='folderActionsEnabled'>
+<retval type='B'/>
+</method>
+<method selector='frontmost'>
+<retval type='B'/>
+</method>
+<method selector='scriptMenuEnabled'>
+<retval type='B'/>
+</method>
+<method selector='setFolderActionsEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setUIElementsEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SystemEventsAttribute'>
+<method selector='settable'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsConfiguration'>
+<method selector='connected'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsDesktop'>
+<method selector='randomOrder'>
+<retval type='B'/>
+</method>
+<method selector='setRandomOrder:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTranslucentMenuBar:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='translucentMenuBar'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsDisk'>
+<method selector='ejectable'>
+<retval type='B'/>
+</method>
+<method selector='ignorePrivileges'>
+<retval type='B'/>
+</method>
+<method selector='localVolume'>
+<retval type='B'/>
+</method>
+<method selector='setIgnorePrivileges:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='startup'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsDiskItem'>
+<method selector='busyStatus'>
+<retval type='B'/>
+</method>
+<method selector='packageFolder'>
+<retval type='B'/>
+</method>
+<method selector='setVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='visible'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsDockPreferencesObject'>
+<method selector='animate'>
+<retval type='B'/>
+</method>
+<method selector='autohide'>
+<retval type='B'/>
+</method>
+<method selector='magnification'>
+<retval type='B'/>
+</method>
+<method selector='setAnimate:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAutohide:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMagnification:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SystemEventsDocument'>
+<method selector='modified'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsFile'>
+<method selector='setStationery:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='stationery'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsFolderAction'>
+<method selector='enabled'>
+<retval type='B'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SystemEventsInterface'>
+<method selector='automatic'>
+<retval type='B'/>
+</method>
+<method selector='setAutomatic:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SystemEventsItem'>
+<method selector='exists'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsLoginItem'>
+<method selector='hidden'>
+<retval type='B'/>
+</method>
+<method selector='setHidden:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SystemEventsPrintSettings'>
+<method selector='collating'>
+<retval type='B'/>
+</method>
+<method selector='exists'>
+<retval type='B'/>
+</method>
+<method selector='setCollating:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SystemEventsProcess'>
+<method selector='Classic'>
+<retval type='B'/>
+</method>
+<method selector='acceptsHighLevelEvents'>
+<retval type='B'/>
+</method>
+<method selector='acceptsRemoteEvents'>
+<retval type='B'/>
+</method>
+<method selector='backgroundOnly'>
+<retval type='B'/>
+</method>
+<method selector='frontmost'>
+<retval type='B'/>
+</method>
+<method selector='hasScriptingTerminology'>
+<retval type='B'/>
+</method>
+<method selector='setFrontmost:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='visible'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsQuickTimeData'>
+<method selector='autoPlay'>
+<retval type='B'/>
+</method>
+<method selector='autoPresent'>
+<retval type='B'/>
+</method>
+<method selector='autoQuitWhenDone'>
+<retval type='B'/>
+</method>
+<method selector='looping'>
+<retval type='B'/>
+</method>
+<method selector='storedStream'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsScreenSaverPreferencesObject'>
+<method selector='mainScreenOnly'>
+<retval type='B'/>
+</method>
+<method selector='running'>
+<retval type='B'/>
+</method>
+<method selector='setMainScreenOnly:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setShowClock:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='showClock'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsScript'>
+<method selector='enabled'>
+<retval type='B'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SystemEventsSecurityPreferencesObject'>
+<method selector='automaticLogin'>
+<retval type='B'/>
+</method>
+<method selector='logOutWhenInactive'>
+<retval type='B'/>
+</method>
+<method selector='requirePasswordToUnlock'>
+<retval type='B'/>
+</method>
+<method selector='requirePasswordToWake'>
+<retval type='B'/>
+</method>
+<method selector='secureVirtualMemory'>
+<retval type='B'/>
+</method>
+<method selector='setAutomaticLogin:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setLogOutWhenInactive:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setRequirePasswordToUnlock:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setRequirePasswordToWake:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSecureVirtualMemory:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SystemEventsService'>
+<method selector='active'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsSpacesPreferencesObject'>
+<method selector='setSpacesEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='spacesEnabled'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsTrack'>
+<method selector='audioCharacteristic'>
+<retval type='B'/>
+</method>
+<method selector='enabled'>
+<retval type='B'/>
+</method>
+<method selector='highQuality'>
+<retval type='B'/>
+</method>
+<method selector='setEnabled:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setHighQuality:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='visualCharacteristic'>
+<retval type='B'/>
+</method>
+</class>
+<class name='SystemEventsUIElement'>
+<method selector='enabled'>
+<retval type='B'/>
+</method>
+<method selector='focused'>
+<retval type='B'/>
+</method>
+<method selector='selected'>
+<retval type='B'/>
+</method>
+<method selector='setFocused:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelected:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='SystemEventsWindow'>
+<method selector='closeable'>
+<retval type='B'/>
+</method>
+<method selector='floating'>
+<retval type='B'/>
+</method>
+<method selector='miniaturizable'>
+<retval type='B'/>
+</method>
+<method selector='miniaturized'>
+<retval type='B'/>
+</method>
+<method selector='modal'>
+<retval type='B'/>
+</method>
+<method selector='resizable'>
+<retval type='B'/>
+</method>
+<method selector='setMiniaturized:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setZoomed:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='titled'>
+<retval type='B'/>
+</method>
+<method selector='visible'>
+<retval type='B'/>
+</method>
+<method selector='zoomable'>
+<retval type='B'/>
+</method>
+<method selector='zoomed'>
+<retval type='B'/>
+</method>
+</class>
+</signatures>

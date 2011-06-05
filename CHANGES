@@ -1,1 +1,14 @@
-None yet!
+v 0.3.0
+====
+* Changed how blocks are passed and received
+* Slight changes the API
+* New example scripts
+* Added a bunch of commands, see `examples/` directory for details
+* Added `open` command
+* Added `link` command
+* Added `terminal` command (best used with one terminal window and/or visor)
+* Added `menu` command
+
+v 0.2.5
+====
+ * Initial release

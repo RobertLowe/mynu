@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.name = %q{mynu}
   s.version = "#{Mynu::Version::STRING}"
   s.authors = ["Rob Lowe"]
-  s.date = %q{2011-05-29}
+  s.date = %q{2011-06-05}
   s.description = %q{A simple DSL to create a systembar menu with macruby in OSX}
   s.email = %q{rob@iblargz.com}
   s.extra_rdoc_files = [
@@ -24,6 +24,11 @@ Gem::Specification.new do |s|
     "mynu.gemspec",
     "lib/mynu.rb",
     "lib/mynu/assets/logo.png",
+    "lib/mynu/support.rb",
+    "lib/mynu/support/system.rb",
+    "lib/mynu/support/terminal.rb",
+    "lib/mynu/support/bridgesupport/Terminal.bridgesupport",
+    "lib/mynu/support/bridgesupport/SystemEvents.bridgesupport",
     "lib/mynu/menu.rb",
     "lib/mynu/menu/menu_item.rb",
     "lib/mynu/menu/block_menu_item.rb",

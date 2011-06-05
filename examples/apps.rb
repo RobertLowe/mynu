@@ -23,34 +23,17 @@ require 'mynu'
 
 mynu = Mynu.new
 
-mynu.menu "Applications" do |applications|
-  applications.app "TextEdit", "/Applications/Utilities/Terminal.app"
+mynu.app "TextEdit", "/Applications/TextEdit.app"
+
+mynu.app "TextEdit", "/Applications/TextEdit.app" do
+  p self # BlockMenuItem
+  setTitle "TextEdit - Clicked"
 end
 
-mynu.menu "Project" do |project|
-  project.terminal "Working Directory", "~/example"
-  project.link "Live",        "http://example.com"
-  project.link "Staging",     "http://user:pass@staging.example.com"
-  project.link "Development", "http://example.dev"
-  project.menu "Repos" do |repos|
-    repos.open "Example", "~/example"
-    repos.open "Resources", "~/example-resources"
-  end
+mynu.link "TextEdit & Disable", "/Applications/TextEdit.app" do |item|
+  p item # BlockMenuItem
+  item.setTitle "TextEdit Disabled!"
+  item.disabled
 end
-
-mynu.separator
-
-mynu.menu "Development" do |development|
-  development.menu "Rails" do |rails|
-    rails.link "Github", "http://github.com/rails/rails"
-    rails.open "Repo", "~/workspace/rails"
-  end
-end
-
-mynu.separator
-mynu.open "Downloads", "~/Downloads"
-mynu.separator
-mynu.open "Desktop", "~/Desktop"
-mynu.separator
 
 mynu.run

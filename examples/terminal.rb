@@ -23,34 +23,28 @@ require 'mynu'
 
 mynu = Mynu.new
 
-mynu.menu "Applications" do |applications|
-  applications.app "TextEdit", "/Applications/Utilities/Terminal.app"
+#############################################################
+# Warning!
+#
+# This makes the assumation you use Visor and only manage
+# one terminal window. Otherwise tabs will only be created
+# in your first/primary terminal window.
+#
+# You can get Visor at: http://visor.binaryage.com/
+#
+#############################################################
+
+# Normal usage will return to the frontmost app at execution
+mynu.terminal "Echo & Disable Item", "echo hello" do
+  disabled
 end
 
-mynu.menu "Project" do |project|
-  project.terminal "Working Directory", "~/example"
-  project.link "Live",        "http://example.com"
-  project.link "Staging",     "http://user:pass@staging.example.com"
-  project.link "Development", "http://example.dev"
-  project.menu "Repos" do |repos|
-    repos.open "Example", "~/example"
-    repos.open "Resources", "~/example-resources"
-  end
+mynu.terminal "Echo & Exit", "echo hello", :exit => true do
+  disabled
 end
 
-mynu.separator
-
-mynu.menu "Development" do |development|
-  development.menu "Rails" do |rails|
-    rails.link "Github", "http://github.com/rails/rails"
-    rails.open "Repo", "~/workspace/rails"
-  end
+mynu.terminal "Keeps focus on Terminal Tab", "echo hello", :focus => true do
+  disabled
 end
-
-mynu.separator
-mynu.open "Downloads", "~/Downloads"
-mynu.separator
-mynu.open "Desktop", "~/Desktop"
-mynu.separator
 
 mynu.run

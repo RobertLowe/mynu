@@ -1,0 +1,158 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='0.9'>
+<enum name='TerminalPrintingErrorHandlingDetailed' value='1819763828'/>
+<enum name='TerminalPrintingErrorHandlingStandard' value='1819767668'/>
+<enum name='TerminalSaveOptionsAsk' value='1634954016'/>
+<enum name='TerminalSaveOptionsNo' value='1852776480'/>
+<enum name='TerminalSaveOptionsYes' value='2036691744'/>
+<class name='TerminalApplication'>
+<method selector='frontmost'>
+<retval type='B'/>
+</method>
+<method selector='print:withProperties:printDialog:'>
+<arg type='B' index='2'/>
+</method>
+</class>
+<class name='TerminalSettingsSet'>
+<method selector='exists'>
+<retval type='B'/>
+</method>
+<method selector='fontAntialiasing'>
+<retval type='B'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='setFontAntialiasing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTitleDisplaysCustomTitle:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTitleDisplaysDeviceName:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTitleDisplaysSettingsName:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTitleDisplaysShellPath:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTitleDisplaysWindowSize:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='titleDisplaysCustomTitle'>
+<retval type='B'/>
+</method>
+<method selector='titleDisplaysDeviceName'>
+<retval type='B'/>
+</method>
+<method selector='titleDisplaysSettingsName'>
+<retval type='B'/>
+</method>
+<method selector='titleDisplaysShellPath'>
+<retval type='B'/>
+</method>
+<method selector='titleDisplaysWindowSize'>
+<retval type='B'/>
+</method>
+</class>
+<class name='TerminalTab'>
+<method selector='busy'>
+<retval type='B'/>
+</method>
+<method selector='exists'>
+<retval type='B'/>
+</method>
+<method selector='fontAntialiasing'>
+<retval type='B'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='selected'>
+<retval type='B'/>
+</method>
+<method selector='setFontAntialiasing:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelected:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTitleDisplaysCustomTitle:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTitleDisplaysDeviceName:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTitleDisplaysFileName:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTitleDisplaysShellPath:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setTitleDisplaysWindowSize:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='titleDisplaysCustomTitle'>
+<retval type='B'/>
+</method>
+<method selector='titleDisplaysDeviceName'>
+<retval type='B'/>
+</method>
+<method selector='titleDisplaysFileName'>
+<retval type='B'/>
+</method>
+<method selector='titleDisplaysShellPath'>
+<retval type='B'/>
+</method>
+<method selector='titleDisplaysWindowSize'>
+<retval type='B'/>
+</method>
+</class>
+<class name='TerminalWindow'>
+<method selector='closeable'>
+<retval type='B'/>
+</method>
+<method selector='exists'>
+<retval type='B'/>
+</method>
+<method selector='frontmost'>
+<retval type='B'/>
+</method>
+<method selector='miniaturizable'>
+<retval type='B'/>
+</method>
+<method selector='miniaturized'>
+<retval type='B'/>
+</method>
+<method selector='printWithProperties:printDialog:'>
+<arg type='B' index='1'/>
+</method>
+<method selector='resizable'>
+<retval type='B'/>
+</method>
+<method selector='setFrontmost:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setMiniaturized:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setZoomed:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='visible'>
+<retval type='B'/>
+</method>
+<method selector='zoomable'>
+<retval type='B'/>
+</method>
+<method selector='zoomed'>
+<retval type='B'/>
+</method>
+</class>
+</signatures>

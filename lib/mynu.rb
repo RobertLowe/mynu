@@ -12,37 +12,41 @@ class Mynu
   autoload :Menu,          'mynu/menu' # wrapping NSMenu
   autoload :Dsl,           'mynu/dsl'  # dsl modules
 
-  include Dsl::Block
+  autoload :Support,       'mynu/support'
 
-  attr_accessor :app         # the sharedApplication
-  attr_accessor :status_item # the new bar icon
-  attr_accessor :menu        # menu container
-  attr_accessor :items       # root items
+  attr_accessor :__app         # the sharedApplication
+  attr_accessor :__status_item # the new bar icon
+  attr_accessor :__menu        # menu container
+
+  include Dsl::Block # menu, app, open, terminal on items
+  alias_method :link, :open
+
+  attr_accessor :items
 
   # Prepare the application
   def initialize(icon = nil, menu_title = 'Mynu')
-    @app = NSApplication.sharedApplication
+    @__app = NSApplication.sharedApplication
 
     icon = File.join(File.dirname(__FILE__), '..', 'lib') + '/mynu/assets/logo.png' if icon.nil?
 
-    @status_item = status_bar.statusItemWithLength(NSVariableStatusItemLength)
-    @status_item.setImage NSImage.new.initWithContentsOfFile(icon)
+    @__status_item = status_bar.statusItemWithLength(NSVariableStatusItemLength)
+    @__status_item.setImage NSImage.new.initWithContentsOfFile(icon)
 
-    @menu = Menu.new
-    @menu.initWithTitle menu_title
-    @menu.setAutoenablesItems false
-    
+    @__menu = Menu.new
+    @__menu.initWithTitle menu_title
+    @__menu.setAutoenablesItems false
+
     @items = []
   end
 
   def run
-    @status_item.setMenu loadMenu
-    @app.run
+    @__status_item.setMenu loadMenu
+    @__app.run
   end
 
   def quit(sender)
     puts "Quitting :: Mynu"
-    @app.terminate(self)
+    @__app.terminate(self)
   end
 
 protected
@@ -53,16 +57,16 @@ protected
 
   def loadMenu
     @items.each do |item|
-      @menu.addItem item
+      @__menu.addItem item
     end
 
     quit = Menu::MenuItem.new
     quit.title = 'Quit'
     quit.action = 'quit:'
     quit.target = self
-    @menu.addItem quit
+    @__menu.addItem quit
 
-    @menu
+    @__menu
   end
 
 end

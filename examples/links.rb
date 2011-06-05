@@ -23,43 +23,17 @@ require 'mynu'
 
 mynu = Mynu.new
 
-mynu.item "Hello World!" do |menu|
-  puts "Inside menu setup!"
-  menu.title = "Good Bye World!"
-  menu.item "Option 1" do |sub_menu|
-    sub_menu.execute do
-      puts "Execution block"
-      sub_menu.title = "Dynamically changed!"
-    end
-  end
-  menu.item "Option 2" do |sub_menu|
-    sub_menu.item "Option 2a" do
-      puts "Option 2a clicked!"
-    end
-    sub_menu.item "Option 2b" do
-      puts "Option 2b clicked!"
-    end
-    sub_menu.execute do
-      puts "Execution block and items"
-      sub_menu.title = "Dynamically changed!"
-    end
-  end
-  capture_menu_item = menu.item "Disabled" do |sub_menu|
-    sub_menu.disabled
-  end
-  menu.item "Enable `Disabled`" do |sub_menu|
-    sub_menu.execute do
-      capture_menu_item.enabled
-      capture_menu_item.execute do
-        capture_menu_item.title = "Disabled (Again)!"
-        capture_menu_item.disabled
-      end
-    end
-  end
+mynu.link "Google", "http://google.com"
+
+mynu.link "Google", "http://google.com" do
+  p self # BlockMenuItem
+  setTitle "New"
 end
 
-mynu.item "Simple Item" do
-  puts "Hello World!"
+mynu.link "Google (Will disable)", "http://google.com" do |item|
+  p item # BlockMenuItem
+  item.setTitle "Disabled!"
+  item.disabled
 end
 
 mynu.run
