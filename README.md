@@ -67,7 +67,7 @@ A workflow example:
       mynu = Mynu.new
 
       mynu.menu "Applications" do |applications|
-        applications.app "TextEdit", "/Applications/Utilities/Terminal.app"
+        applications.app "TextEdit", "/Applications/TextEdit.app"
       end
 
       mynu.menu "Project" do |project|
